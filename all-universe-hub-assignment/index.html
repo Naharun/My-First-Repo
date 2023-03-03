@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.3/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <header>
+    <h1>Welcome</h1>
+  </header>
+  <main class="container">
+    <section class="lg:px-12 flex flex-col md:flex-row lg:flex-row ">
+      <div id="features-container" class=" w-[70%] y-36 mt-5 grid md:grid-cols-3 lg:grid-cols-3 gap-6">
+        <div id="card-bg" class="card circle w-full bg-secondary mt-5">
+            <figure class="px-10 pt-10">
+                <img src="images/triangle.png" alt="" class="rounded-xl" />
+            </figure>
+            <div id="card-bg" class="card-body items-center text-center">
+                <h2 class="card-title">Triangle</h2>
+                <p>Area (A) =<span>0.5</span> <i class="fa-solid fa-xmark"></i> <span>b</span> <i
+                        class="fa-solid fa-xmark">
+                    </i> <span>h</span></p>
+                <div class="flex gap-2">
+                    <input id="triangle-base-input" class="w-20 rounded ml-2" type="" placeholder="b">
+                    <p>cm</p>
+                    <input id="triangle-height-input" class="w-20 rounded" type="" placeholder="h">
+                    <p>cm</p>
+                </div>
+                <div class="button">
+                    <button id="btn-triangle" class="btn btn-info  hover:bg-slate-300 w-60">Calculate</button>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+  </main>
+<script src="js/javascript.js"></script>
+</body>
+</html>
